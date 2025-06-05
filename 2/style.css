@@ -1,0 +1,51 @@
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background: cyan;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background: cyan;
+    clear: both;
+}
+
+.bLeft {
+    width: 200px;
+    height: 600px;
+    background: yellow;
+    float: left;
+}
+
+.bRight {
+    width: 200px;
+    height: 600px;
+    background: limegreen;
+    float: right;
+}
+
+.center{
+    width: 800px;
+    float: left;
+}
+.center1 {
+    background: lime;
+    height: 200px;
+}
+
+.center2 {
+    background: violet;
+    height: 200px;
+}
+
+.center3 {
+    background: blue;
+    height: 200px;
+}
