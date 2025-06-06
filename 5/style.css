@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #dde3dd;
+  color: #222;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  background-color: #4e5b4f;
+  color: white;
+  padding: 1.5rem;
+  gap: 1.5rem;
+}
+
+.profile-photo {
+  width: 155px;
+  height: 206px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.profile-info h1 {
+  font-size: 1.8rem;
+}
+
+.profile-info h2 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.profile-info ul {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+.skills, .education, .traits {
+  background-color: #f0f3f0;
+  padding: 1rem 2rem;
+  border-top: 1px solid #ccc;
+}
+
+.skills h3,
+.education h3,
+.traits h3 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.skills p {
+  margin-bottom: 0.3rem;
+}
+
+.education ul,
+.traits ul {
+  list-style: square;
+  padding-left: 1.5rem;
+}
+
+.drawings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #f0f3f0;
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+}
+
+.drawings img {
+  width: 30%;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+.portfolio {
+  padding: 2rem;
+  background-color: #d3d9d3;
+  border-top: 1px solid #aaa;
+  text-align: center;
+}
+
+.portfolio-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.portfolio-item img {
+  max-width: 80%;
+  border-radius: 8px;
+}
+
+.label {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  background-color: #2f3e2f;
+  color: white;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.portfolio-footer {
+  margin-top: 1.5rem;
+  font-style: italic;
+  color: #333;
+}
