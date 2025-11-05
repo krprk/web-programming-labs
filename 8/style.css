@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+}
+
+.container {
+    max-width: 470px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    width: 470px;
+    height: 470px;
+    margin: 20px auto;
+}
+
+.slider-row {
+    width: 2350px;
+    height: 470px;
+    display: flex;
+    background: #ffd59f;
+    position: relative;
+    left: 0;
+    transition: left 0.5s ease;
+}
+
+img {
+    width: 470px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.btn{
+    position: relative;
+    font-size: 1.875rem;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 250ms;
+    gap: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+}
+
