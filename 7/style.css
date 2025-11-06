@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picker{
+    height: 400px;
+    width: 200px;
+
+}
+.left-side, .right-side {
+    display: flex;
+    flex-direction: column;
+    height: 400px; 
+}
+.color1, .color2, .color3, .color4 {
+    height: 200px;
+    width: 200px;
+    border: 2px solid;
+}
