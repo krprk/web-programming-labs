@@ -1,13 +1,13 @@
-const picker = document.querySelector('.picker')
-const color1 = document.querySelector('.color1')
-const color2 = document.querySelector('.color2')
-const color3 = document.querySelector('.color3')
-const color4 = document.querySelector('.color4')
-picker.addEventListener('input', function(){
+const picker = document.querySelector(".picker")
+const color1 = document.querySelector(".color1")
+const color2 = document.querySelector(".color2")
+const color3 = document.querySelector(".color3")
+const color4 = document.querySelector(".color4")
+picker.addEventListener("input", function(){
     console.log(picker.value);
 })
 
-picker.addEventListener('input', function(){
+picker.addEventListener("input", function(){
     let color = picker.value;
     console.log(color);
     color1.style.backgroundColor = hexToRgbString(color, 0, 64, 64)
@@ -17,7 +17,7 @@ picker.addEventListener('input', function(){
 })
 
 function hexToRgbString(hex, x, y, z) {
-    hex = hex.replace(/^#/, '');
+    hex = hex.replace(/^#/, "");
     
     const r = parseInt(hex.substring(0, 2), 16);
     const g = parseInt(hex.substring(2, 4), 16);
@@ -27,19 +27,19 @@ function hexToRgbString(hex, x, y, z) {
 }
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    const colors = document.querySelectorAll('.color1, .color2, .color3, .color4');
+document.addEventListener("DOMContentLoaded", () => {
+    const colors = document.querySelectorAll(".color1, .color2, .color3, .color4");
 
     function showBackgroundColor() {
         this.innerHTML = this.style.backgroundColor;
     }
     function copyhex(){
         navigator.clipboard.writeText(rgbToHex(this.style.backgroundColor));
-        alert('Текст скопирован в буфер обмена');
+        alert("Текст скопирован в буфер обмена");
     }
     colors.forEach(block => {
-        block.addEventListener('mouseenter', showBackgroundColor);
-        block.addEventListener('click', copyhex);
+        block.addEventListener("mouseenter", showBackgroundColor);
+        block.addEventListener("click", copyhex);
     });
 });
 
@@ -51,4 +51,5 @@ function rgbToHex(rgbString) {
         .join("")
         .toUpperCase();
 }
+
 
