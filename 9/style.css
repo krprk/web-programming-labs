@@ -1,0 +1,35 @@
+body {
+    font: 1em sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.container1, .container2, .container3 {
+    width: 700px;
+    flex-direction: column;
+    padding: auto;
+    background-color: lightgrey;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 12px;
+}
+
+#fullName, #email, #about{
+    width: 300px;
+}
+
+button {
+    margin: 5px;
+    padding: 6px 14px;
+    cursor: pointer;
+}
+
+h2, h3, h4{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}

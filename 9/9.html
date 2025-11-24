@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Анкета-резюме</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form class="resumeForm">
+    <h2>Анкета-резюме</h2>
+    <div class="container1">
+        <div class="name">
+          <label for="fullName">ФИО:</label>
+          <input type="text" id="fullName" name="fullName">
+        </div>
+        <div class="mail">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="telephone">
+          <label for="phone">Телефон:</label>
+          <input type="tel" id="phone" name="phone">        
+        </div>
+        <div class="education">
+          <label for="education">Образование:</label>
+          <select id="education"  name="education">
+            <option value="1">основное общее образование</option>
+            <option value="12">среднее общее образование</option>
+            <option value="13">среднее профессиональное образование</option>
+            <option value="2">высшее образование - бакалавриат</option>
+            <option value="22">высшее образование - специалитет, магистратура</option>
+            <option value="23">высшее образование - подготовка кадров высшей квалификации</option>
+          </select>        
+        </div>
+        <div class="birthdate">
+          <label for="birth">Дата рождения:</label>
+          <input type="date" id="birth" name="birth">        
+        </div>
+        <div class="porfoliolink">
+          <label for="portfolio">Ссылка на портфолио:</label>
+          <input type="url" id="portfolio" name="portfolio">
+        </div>
+        <div class="aboutme">
+          <label for="about">О мне:</label>
+          <textarea id="about" name="about"></textarea>
+        </div>
+        
+    </div>
+    <div class="container2">
+        <h4>Навыки:</h4>
+        <div>
+            <div>
+              <input type="checkbox" id="skillJs" name="skills" value="JavaScript">
+              <label for="skillJs">JavaScript</label>
+            </div>
+            <div>
+              <input type="checkbox" id="skillHtml" name="skills" value="HTML">
+              <label for="skillHtml">HTML</label>
+            </div>
+            <div>
+              <input type="checkbox" id="skillCSS" name="skills" value="CSS">
+              <label for="skillCSS">CSS</label>
+            </div>
+            <div>
+              <input type="checkbox" id="skillReact" name="skills" value="React">
+              <label for="skillReact">React</label>
+            </div>
+        </div>
+    </div>
+    <div class="container3">
+      <h3>Управление профилями</h3>
+      <div>
+        <label>Имя нового профиля:
+          <input type="text" id="profileName">
+        </label>
+        <button type="button" id="saveProfile">Сохранить профиль</button>
+      </div>
+      <div>
+        <label>Загрузить профиль:
+          <select id="profileSelect"></select>
+        </label>
+        <button type="button" id="loadProfile">Загрузить</button>
+        <button type="button" id="deleteProfile">Удалить</button>
+      </div>
+      <div>
+        <button type="button" id="clearForm">Новая анкета</button>
+      </div>
+    </div>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
